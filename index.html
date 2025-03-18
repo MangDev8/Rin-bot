@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shima-Rin Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/toxicity"></script>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-box" id="chat-box">
+            <div class="message bot">Halo! Aku Shima-Rin, tanyakan apa saja!</div>
+        </div>
+        <div class="input-container">
+            <button onclick="startVoice()" class="mic-btn">🎤</button>
+            <input type="text" id="user-input" placeholder="Ketik pesan..." onkeypress="handleKeyPress(event)">
+            <button onclick="sendMessage()" class="send-btn">➤</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
